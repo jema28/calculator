@@ -1,16 +1,17 @@
+/* ---------- BASE STYLES ---------- */
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
 body {
-  font-family: "Lato", sans-serif;
-  color: #333;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -18,45 +19,77 @@ body {
   color: rgba(255, 255, 255, 0.7);
 }
 
+body,
+input[type="button"],
+input:first-child {
+  font-family: "Lato", sans-serif;
+}
+
+
+/* ---------- CALCULATOR STYLES ---------- */
+
 .calc-container {
   display: flex;
   flex-wrap: wrap;
   width: 260px;
   margin: 0 auto;
-  background-image: linear-gradient(-225deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.15) 100%);
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 5px;
 }
 
-.calc-container div {
+input:first-child {
+  text-align: right;
+  flex: 100%;
+  height: 120px;
+  border-radius: 0px;
+  transform: none;
+  background: none;
+}
+
+input[type="button"],
+button {
+  font-size: 0.8em;
   height: 50px;
   flex: 1 0 25%;
   text-align: center;
   vertical-align: middle;
   line-height: 50px;
+  background: transparent;
 }
 
-.calc-container div p:hover {
-  transform: scale(1.1); 
-  transition: 200ms ease-in;
+input[type="button"],
+input:first-child,
+button {
+  box-shadow: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.7);
 }
 
-.calc-container div:first-child {
-  flex: 100%;
-  height: 120px;
-  border-radius: 0px;
-  transform: none; 
+button i {
+  font-size: 19px;
 }
 
-.accent {
+
+/* ------ ACCENT ------ */
+
+input[type="button"]:nth-of-type(2),
+input[type="button"]:nth-of-type(3),
+input[type="button"]:nth-of-type(4),
+input[type="button"]:nth-of-type(5),
+input[type="button"]:nth-of-type(9),
+input[type="button"]:nth-of-type(13),
+input[type="button"]:nth-of-type(17),
+input[type="button"]:nth-of-type(20) {
   background: rgba(255, 255, 255, 0.02);
   border-bottom: 1px solid rgba(255, 255, 255, 0.025);
-  border-left: 1px solid rgba(255, 255, 255, 0.025);
+  border-left: 1px solid rgba(255, 255, 255, 0.025)
 }
 
-.clear {
+input[type="button"]:nth-of-type(2) {
   border-left: none;
 }
 
-.equals {
-   border-bottom-right-radius: 5px;
+input[type="button"]:nth-of-type(20) {
+  border-bottom-right-radius: 5px;
+  border-bottom: none;
 }
