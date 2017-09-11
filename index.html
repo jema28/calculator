@@ -13,30 +13,32 @@
 
 <body>
   <div class="calc-container">
-    <input id="calculation">
-    <input type="button" id="clear" value="AC">
-    <input type="button" id="signtoggle" value="+/-">
-    <input type="button" id="percentage" value="%">
-    <input type="button" id="divide" value="&divide;">
-    <input type="button" id="7" value="7">
-    <input type="button" id="8" value="8">
-    <input type="button" id="9" value="9">
-    <input type="button" id="times" value="&times;">
-    <input type="button" id="4" value="4">
-    <input type="button" id="5" value="5">
-    <input type="button" id="6" value="6">
-    <input type="button" id="minus" value="&minus;">
-    <input type="button" id="1" value="1">
-    <input type="button" id="2" value="2">
-    <input type="button" id="3" value="3">
-    <input type="button" id="plus" value="&plus;">
-    <input type="button" id="decimal" value=".">
-    <input type="button" id="0" value="0">
-    <button id="backspace">
+    <div id="working-equation">0</div>
+    <div id="calculation">0</div>
+    <input type="button" id="clear" value="AC" onclick="reset()">
+    <input type="button" id="signtoggle" value="+/-" onclick="signtoggle()">
+    <input type="button" id="percentage" value="%" onclick="percentage()">
+    <input type="button" id="divide" value="&divide;" onclick="divide()">
+    <input type="button" id="7" value="7" onclick="calc(7)">
+    <input type="button" id="8" value="8" onclick="calc(8)">
+    <input type="button" id="9" value="9" onclick="calc(9)">
+    <input type="button" id="times" value="&times;" onclick="times()">
+    <input type="button" id="4" value="4" onclick="calc(4)">
+    <input type="button" id="5" value="5" onclick="calc(5)">
+    <input type="button" id="6" value="6" onclick="calc(6)">
+    <input type="button" id="minus" value="&minus;" onclick="minus()">
+    <input type="button" id="1" value="1" onclick="calc(1)">
+    <input type="button" id="2" value="2" onclick="calc(2)">
+    <input type="button" id="3" value="3" onclick="calc(3)">
+    <input type="button" id="plus" value="&plus;" onclick="add()">
+    <input type="button" id="decimal" value="." onclick="decimal()">
+    <input type="button" id="0" value="0" onclick="calc(0)">
+    <button id="backspace" onclick="backspace()">
       <i class="ion-ios-arrow-thin-left"></i>
     </button>
-    <input type="button" id="equals" value="&equals;">
+    <input type="button" id="equals" value="&equals;" onclick="equals()">
   </div>
+  <script src="script.js"></script>
 </body>
 
 </html>
