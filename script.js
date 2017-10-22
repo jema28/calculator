@@ -17,7 +17,7 @@ const calc = button => {
   }
 }
 
-const otherFunc = operator => {
+const addOperator = operator => {
   const val = validation(cacheNum.charAt(cacheNum.length - 1));
   console.log(val);
   if (!val) {
@@ -55,10 +55,10 @@ const backspace = () => {
 
 // ------ OPERATOR FUNCTIONS ------ //
 
-const add = () => otherFunc("+");
-const minus = () => otherFunc("-");
-const times = () => otherFunc("*");
-const divide = () => otherFunc("/");
+const add = () => addOperator("+");
+const minus = () => addOperator("-");
+const times = () => addOperator("*");
+const divide = () => addOperator("/");
 
 // ------ UPDATE NUMBER FUNCTIONS ------ //
 
