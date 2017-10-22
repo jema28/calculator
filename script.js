@@ -12,9 +12,7 @@ const calc = button => {
     output += button.toString();
     workingEquation = cacheNum + output;
     updateHTML(output);
-  } else {
-    console.log("character limit reached")
-  }
+  } else alert("Oops. Character limit reached!");
 }
 
 const addOperator = operator => {
