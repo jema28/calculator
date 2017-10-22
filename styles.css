@@ -109,6 +109,6 @@ input[type="button"]:nth-of-type(20) {
 input[type="button"]:hover,
 button:hover {
  font-size: 0.95em;
- border: 1px solid rgba(255, 255, 255, 0.3);
+ border: 1px solid rgba(255, 255, 255, 0.2);
  transition: all ease-in ease-out 0.1s;
 }
