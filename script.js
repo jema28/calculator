@@ -85,7 +85,7 @@ const percentage = () => {
 
 const updateHTML = value => {
   document.getElementById("calculation").innerHTML = value;
-  document.getElementById("working-equation").innerHTML = workingEquation;
+  if (workingEquation.length <= 25) document.getElementById("working-equation").innerHTML = workingEquation;
 }
 
 // ------ VALIDATION ------ //
