@@ -39,11 +39,13 @@ const reset = () => {
 }
 
 const equals = () => {
+  if (cacheNum !== "") {
     cacheNum += output;
     cacheNum = eval(cacheNum).toString();
     workingEquation = cacheNum;
     updateHTML(cacheNum);
     output = "";
+  }
 }
 
 const backspace = () => {
