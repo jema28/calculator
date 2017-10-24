@@ -1,7 +1,4 @@
 # Calculator
 
 Calculator made as part of the precourse materials for FAC12.
-
-**To work on / bugs to fix:**
-- Operator validation
-- Backspace shouldn't run if "cacheNum" is empty.
+https://jema28.github.io/calculator/
